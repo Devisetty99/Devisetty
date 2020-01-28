@@ -1,6 +1,6 @@
 Get-ExecutionPolicy -List
 
-<#
+
  param (
     $param1,
     $param2, 
@@ -22,6 +22,5 @@ exit 0
 
 #Get-ChildItem $Path
 #dir
-#echo $param1
+echo $param1
 
-#>
