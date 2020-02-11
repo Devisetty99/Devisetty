@@ -13,10 +13,11 @@ steps:
    $hell=[String] (git diff HEAD HEAD~ --name-only)
    echo $hell
    
-  displayName: 'PowerShell Script'
-- task: PowerShell@2
-  displayName: 'PowerShell Script'
-  inputs:
-    targetType: filePath
-    filePath: C:\Users\vdevisetty\Desktop\Devisetty\try.ps1
-    ignoreLASTEXITCODE: true
+  #displayName: 'PowerShell Script'
+#- task: PowerShell@2
+ # displayName: 'PowerShell Script'
+ # inputs:
+ #   targetType: filePath
+  #  filePath: C:\Users\vdevisetty\Desktop\Devisetty\try.ps1
+  #  ignoreLASTEXITCODE: true
+    
