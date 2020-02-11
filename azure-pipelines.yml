@@ -12,7 +12,13 @@ steps:
    cd C:\Users\vdevisetty\Desktop\TEST
    $hell=[String] (git diff HEAD HEAD~ --name-only)
    echo $hell
-   
+  
+- task: PublishPipelineArtifact@1
+  displayName: 'Publish Pipeline Artifact'
+  inputs:
+    targetPath: Tem.ps1
+    artifact: TEST
+  enabled: false
   #displayName: 'PowerShell Script'
 #- task: PowerShell@2
  # displayName: 'PowerShell Script'
