@@ -5,13 +5,14 @@
 
 trigger:
 - master
-pool: <inherit from pipeline>
+pool: 
+  name: Azure Pipelines
 
 steps:
-#- powershell: |
-#   cd C:\Users\vdevisetty\Desktop\TEST
-#   $hell=[String] (git diff HEAD HEAD~ --name-only)
-#   echo $hell
+- powershell: |
+   cd C:\Users\vdevisetty\Desktop\TEST
+   $hell=[String] (git diff HEAD HEAD~ --name-only)
+  echo $hell
   
 - task: PublishPipelineArtifact@1
   displayName: 'Publish Pipeline Artifact'
