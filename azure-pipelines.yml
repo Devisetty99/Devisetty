@@ -9,14 +9,12 @@ trigger:
 pool: ON-PREM
 
 steps:
-- powershell: |
+- task:  powershell: |
    cd C:\Users\vdevisetty\Desktop\TEST
    $hell=[String] (git diff HEAD HEAD~ --name-only)
    echo $hell
    
   displayName: 'PowerShell Script'
-
-steps:
 - task: PowerShell@2
   displayName: 'PowerShell Script'
   inputs:
