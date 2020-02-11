@@ -5,7 +5,7 @@
 
 trigger:
 - master
-pool: ON-PREM
+pool: <inherit from pipeline>
 
 steps:
 #- powershell: |
