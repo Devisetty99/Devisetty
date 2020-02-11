@@ -16,7 +16,7 @@ steps:
    
   displayName: 'PowerShell Script'
 
-  steps:
+steps:
 - task: PowerShell@2
   displayName: 'PowerShell Script'
   inputs:
