@@ -1,0 +1,24 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- master
+
+pool: ON-PREM
+
+steps:
+- powershell: |
+   cd C:\Users\vdevisetty\Desktop\TEST
+   $hell=[String] (git diff HEAD HEAD~ --name-only)
+   echo $hell
+   
+  displayName: 'PowerShell Script'
+
+  steps:
+- task: PowerShell@2
+  displayName: 'PowerShell Script'
+  inputs:
+    targetType: filePath
+    filePath: ./Tem.ps1
