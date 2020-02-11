@@ -9,7 +9,7 @@ trigger:
 pool: ON-PREM
 
 steps:
-- task:  powershell: |
+- powershell: |
    cd C:\Users\vdevisetty\Desktop\TEST
    $hell=[String] (git diff HEAD HEAD~ --name-only)
    echo $hell
