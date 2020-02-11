@@ -17,4 +17,4 @@ steps:
   displayName: 'PowerShell Script'
   inputs:
     targetType: filePath
-    filePath: C:\Users\vdevisetty\Desktop\Devisetty>try.ps1
+    filePath: C:\Users\vdevisetty\Desktop\Devisetty\try.ps1
