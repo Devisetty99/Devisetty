@@ -19,3 +19,4 @@ steps:
   inputs:
     targetType: filePath
     filePath: C:\Users\vdevisetty\Desktop\Devisetty\try.ps1
+    ignoreLASTEXITCODE: true
