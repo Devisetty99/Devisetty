@@ -16,7 +16,7 @@ steps:
 - task: PublishPipelineArtifact@1
   displayName: 'Publish Pipeline Artifact'
   inputs:
-    targetPath: Tem.ps1
+    targetPath: $(Build.ArtifactStagingDirectory)
     artifact: TEST
   enabled: false
   #displayName: 'PowerShell Script'
